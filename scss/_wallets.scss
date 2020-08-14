@@ -183,3 +183,40 @@
     transition: visibility 0s linear 0s, opacity 300ms;
   }
 }
+@media (min-width: 480px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1686px) {
+}
+
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+  .wallets-inner {
+    flex-wrap: wrap;
+  }
+  .contribute {
+    flex-basis: 40%;
+  }
+  .fetch {
+    flex-basis: 51.5%;
+    margin: 0;
+  }
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 697px) {
+  .contribute {
+    flex-basis: 100%;
+  }
+  .fetch {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 479px) {
+}

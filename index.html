@@ -97,10 +97,10 @@
                   </label>
               
                   <ul class="menu__box">
-                    <li class="menu__li"><a class="menu__item" href="#">Заказать Nike Air Force</a></li>
-                    <li class="menu__li"><a class="menu__item" href="#">Преимущества</a></li>
-                    <li class="menu__li"><a class="menu__item" href="#">Отзывы</a></li>
-                    <li class="menu__li"><a class="menu__item" href="#">Как сделать заказ</a></li>
+                    <li class="menu__li"><a class="menu__item" href="#">ЗОбмен</a></li>
+                    <li class="menu__li"><a class="menu__item" href="#">Бонусы</a></li>
+                    <li class="menu__li"><a class="menu__item" href="#">Заработок</a></li>
+                    <li class="menu__li"><a class="menu__item" href="#">FAQ</a></li>
                     <li class="menu__li"><a class="menu__item menu__item--img" href="#"> <img class="menu-icon" src="img/speak_2.svg" alt="speak"> Связаться с поддержкой</a></li>
 
                 
@@ -374,8 +374,8 @@
                         <span class="trade-text__name">Отдаете (QIWI RUB)</span>
                         <span class="trade-text__input-wrap">
                           <input
-                            class="trade-text__input input-contribute"
-                            type="text"
+                            class="trade-text__input input-contribute input-img--right"
+                            type="number"
                             placeholder="Min: 5000; Max: 100000"
                             id=""
                             name=""
@@ -386,8 +386,8 @@
                         <span class="trade-text__name">Получаете (Яндекс.Деньги)</span>
                         <span class="trade-text__input-wrap">
                           <input
-                            class="trade-text__input input-fetch"
-                            type="text"
+                            class="trade-text__input input-fetch input-img--right"
+                            type="number"
                             placeholder="Min: 4850.00; Max: 97000.00"
                             id=""
                             name=""
@@ -399,24 +399,11 @@
                     <div class="trade-requisite">
                       <h2 class="trade__title trade-requisite__title">Реквизиты</h2>
                       <label class="trade-text">
-                        <span class="trade-text__name">Мой вопрос</span>
-
-                        <span class="trade-text__input-wrap">
-                          <input
-                            class="trade-text__input"
-                            type="text"
-                            placeholder=""
-                            id=""
-                            name=""
-                          />
-                        </span>
-                      </label>
-                      <label class="trade-text">
                         <span class="trade-text__name">QIWI.кошелек (без “+”)</span>
                         <span class="trade-text__input-wrap">
                           <input
-                            class="trade-text__input"
-                            type="text"
+                            class="trade-text__input purse__input input-img--left"
+                            type="number"
                             placeholder="Пример: 38066..., 7916..., ... "
                             id=""
                             name=""
@@ -427,9 +414,21 @@
                         <span class="trade-text__name">Яндекс счет</span>
                         <span class="trade-text__input-wrap">
                           <input
-                            class="trade-text__input"
+                            class="trade-text__input purse__input input-img--left"
+                            type="number"
+                            placeholder="Пример: 410011234567890"
+                            id=""
+                            name=""
+                          />
+                        </span>
+                      </label>
+                      <label class="trade-text">
+                        <span class="trade-text__name">E-mail</span>
+                        <span class="trade-text__input-wrap">
+                          <input
+                            class="trade-text__input email__input input-img--left"
                             type="text"
-                            placeholder=""
+                            placeholder="user@mail.com"
                             id=""
                             name=""
                           />
@@ -437,18 +436,19 @@
                       </label>
                     </div>
                   </div>
-                  <label class="custom-radio">
-                    <input type="radio" name="color" value="indigo">
-                    <span>Indigo</span>
+                  <label class="trade-radio">
+                    <input type="radio" name="color" value="trade-radio__input">
+                    <span><span class="trade-radio__text" >Я согласен с <span class=" text-blue">условиями и правилами сервиса</span></span></span>
                   </label>
-                  <button  class="btn btn-modal modal-btn  btn-modal--back" >
+                  <div class="trade-btn">
+                  <button  class="btn " >
                     <div class="btn__body-wrapp">
                     <div class="btn__body">
-                      <span class="btn__body--img"> <img src="img/instagram.svg" alt=""></span>
-                      <span class="btn__text">Заказать со скидкой</span>
+                      <span class="btn__text">Обменять</span>
                       </div>
                     </div>
                   </button>
+                </div>
                 </div>
                     <!-- <div class="field-actions">
                      
@@ -465,12 +465,24 @@
       </div>
 <footer class="footer">
   <div class="container">
-    <div class="law-inner">
-      Все права защищены © 2020
-      <div class="law-link">
-        <a href="" class="footer-link__con">Политика конфиденциальности</a>
-      </div>
+    <div class="footer-inner">
+    <ul class="footer__box">
+      <li class="footer__li"><a class="footer__item" href="#">О нас</a></li>
+      <li class="footer__li"><a class="footer__item" href="#">Курсы</a></li>
+      <li class="footer__li"><a class="footer__item" href="#">AML</a></li>
+      <li class="footer__li"><a class="footer__item" href="#">Контакты</a></li>
+      <li class="footer__li"><a class="footer__item" href="#">Соглашение</a></li>
+      
+      <li class="footer__li"><a class="footer__item footer__item--img" href="#"> <img class="footer-icon" src="img/Иконка инструкция.svg" alt="speak"> Инструкция по обмену</a></li>
+      <li class="footer__li"><a class="footer__item footer__item--img" href="#"> Отзывы на Besychange  <img class="footer-icon" src="img/foreign 1.svg" alt="speak"></a></li>
+
+  
+    </ul>
+    <div class="footer-cop">
+      <div class="footer-cop__text">2015-2020 WM express</div>
     </div>
+
+  </div>
   </div>
 </footer>
    
