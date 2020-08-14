@@ -1,0 +1,224 @@
+.trade {
+  width: 300px;
+  min-width: 300px;
+  background-color: #fff;
+  // .trade__form
+
+  &__form {
+  }
+
+  // .trade__title
+
+  &__title {
+  }
+}
+.trade-inner {
+}
+.trade-sum {
+  padding: 20px 20px 0 20px;
+  // .trade-sum__title
+
+  &__title {
+    padding-bottom: 13px;
+  }
+}
+.trade-text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  // .trade-text__name
+
+  &__name {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    padding-bottom: 3px;
+  }
+
+  // .trade-text__input-wrap
+
+  &__input-wrap {
+    max-width: 260px;
+  }
+
+  // .trade-text__input
+
+  &__input {
+    width: 100%;
+    height: 48px;
+
+    background: #f2f6ff;
+    border-radius: 2px;
+    border: transparent;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+
+    color: #9b9b9b;
+    text-overflow: ellipsis;
+  }
+}
+.input-contribute {
+}
+.input-fetch {
+}
+.trade-requisite {
+  padding: 0px 20px 0px 20px;
+  // .trade-requisite__title
+
+  &__title {
+    padding-bottom: 3px;
+  }
+}
+.custom-radio {
+}
+.input-contribute {
+  background-image: url("../img/wallets_1.png");
+  background-position: 230px 50%;
+  background-repeat: no-repeat;
+  background-size: 25px;
+}
+.input-fetch {
+  background-image: url("../img/wallets_3.png");
+  background-position: 230px 50%;
+  background-repeat: no-repeat;
+  background-size: 25px;
+}
+.purse__input {
+  background-image: url("../img/wallet\ 1.svg");
+  background-position: 13px 50%;
+  background-repeat: no-repeat;
+  background-size: 17px;
+}
+.email__input {
+  background-image: url("../img/email\ 1.svg");
+  background-position: 13px 50%;
+  background-repeat: no-repeat;
+  background-size: 17px;
+}
+.trade-radio > input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.trade-radio > span {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  font-size: 10px;
+  line-height: 11px;
+  letter-spacing: 0.035em;
+
+  color: #394247;
+  padding-left: 20px;
+}
+
+.trade-radio > span::before {
+  content: "";
+  display: inline-block;
+  min-width: 19px;
+  height: 19px;
+
+  border: 0.5px solid #394247;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-image: url("../img/confirm\ 1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.trade-radio > input:not(:disabled):not(:checked) + span:hover::before {
+  border-color: #f2f6ff;
+}
+
+.trade-radio > input:not(:disabled):active + span::before {
+  background-color: #f2f6ff;
+  border-color: #f2f6ff;
+}
+
+.trade-radio > input:focus + span::before {
+}
+
+.trade-radio > input:focus:not(:checked) + span::before {
+  border-color: #f2f6ff;
+}
+
+.trade-radio > input:checked + span::before {
+  border-color: #0b76ef;
+  background-color: #0b76ef;
+  background-image: url("../img/confirm\ 1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.trade-radio > input:disabled + span::before {
+  background-color: #e9ecef;
+}
+.trade-radio__text {
+  padding-left: 7px;
+}
+.text-blue {
+  color: #55a3ee;
+}
+.input-img--left::placeholder {
+  padding-left: 40px;
+}
+.input-img--right::placeholder {
+  padding-left: 13px;
+  padding-right: 20px;
+}
+.trade-btn {
+  padding: 20px;
+}
+@media (min-width: 480px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1686px) {
+}
+
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+  .trade {
+    width: 100%;
+  }
+  .trade__form {
+    display: flex;
+  }
+  .trade-sum {
+    flex-basis: 50%;
+  }
+  .trade-requisite {
+    flex-basis: 50%;
+  }
+}
+@media (max-width: 697px) {
+  .trade__form {
+    flex-direction: column;
+  }
+  .trade-sum {
+    flex-basis: auto;
+  }
+  .trade-requisite {
+    flex-basis: auto;
+  }
+}
+
+@media (max-width: 379px) {
+  .trade-text__input-wrap {
+    max-width: 230px;
+  }
+  .input-contribute {
+    background-position: 200px 50%;
+  }
+  .input-fetch {
+    background-position: 200px 50%;
+  }
+}
