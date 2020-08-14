@@ -32,6 +32,7 @@ h1 {
 h2 {
   margin: 0;
   font-family: "ProximaNova-Regular", sans-serif;
+  font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.04em;
@@ -542,6 +543,17 @@ p {
   margin-right: 9px;
 }
 
+.fetch__item:hover {
+  background-color: #fafafa;
+}
+
+.fetch__item:hover .fetch-num__text {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s linear 300ms, opacity 300ms;
+  transition: visibility 0s linear 300ms, opacity 300ms;
+}
+
 .fetch-num {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -559,11 +571,41 @@ p {
   display: -ms-flexbox;
   display: flex;
   color: #394247;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: visibility 0s linear 0s, opacity 300ms;
+  transition: visibility 0s linear 0s, opacity 300ms;
 }
 
 .trade {
   width: 300px;
   min-width: 300px;
+}
+
+.trade-sum {
+  padding: 20px 20px 0 20px;
+}
+
+.trade-sum__title {
+  padding-bottom: 17px;
+}
+
+.trade-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.trade-requisite {
+  padding: 20px 20px 10px 20px;
+}
+
+.trade-requisite__title {
+  padding-bottom: 3px;
 }
 
 .footer {
